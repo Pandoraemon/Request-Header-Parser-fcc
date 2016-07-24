@@ -4,7 +4,12 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(req, res){
-  res.send(req.get("x-forwarded-for")+"<h1>" + req.get('accept-language') + "</h1>");
+  var result = {
+    "IPaddress": req.get("x-forwarded-for"),
+    "Language": req.get("accept-language").split(",")[0],
+    "OS": (/\(.+\)/g).exec(req.get("user-agent"))[0].split(";")[1]
+  };
+  res.send(JSON.stringify(result));
 });
 
 var server = app.listen(app.get('port'), function(){
