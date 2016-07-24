@@ -1,0 +1,22 @@
+{
+  "name": "Request-Header-Parser-fcc",
+  "version": "0.0.1",
+  "description": "fcc program",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Pandoraemon/Request-Header-Parser-fcc.git"
+  },
+  "keywords": [
+    "fcc",
+    "apiproject"
+  ],
+  "author": "Pandoraemon",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/Pandoraemon/Request-Header-Parser-fcc/issues"
+  }
+}
