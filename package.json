@@ -18,5 +18,9 @@
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/Pandoraemon/Request-Header-Parser-fcc/issues"
+  },
+  {
+  "engines":{
+    "node": "5.9.1"
   }
 }
