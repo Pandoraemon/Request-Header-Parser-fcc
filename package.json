@@ -4,7 +4,7 @@
   "description": "fcc program",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,10 @@
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/Pandoraemon/Request-Header-Parser-fcc/issues"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3"
   },
   "engines":{
     "node": "5.9.1"
